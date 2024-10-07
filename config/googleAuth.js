@@ -6,10 +6,12 @@ const User = require("../routes/registerModels");
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-        "195118986970-6sr88jhohv2hm9c6b484gpci44ocook7.apps.googleusercontent.com",
-      clientSecret: "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",
-      callbackURL: "https://blog-site-by-vihan.herokuapp.com/google/callback",
+      clientID: "",
+      // "195118986970-6sr88jhohv2hm9c6b484gpci44ocook7.apps.googleusercontent.com",
+      // clientSecret: "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",
+      clientSecret: "",
+      callbackURL: "",
+      // "https://blog-site-by-vihan.herokuapp.com/google/callback",
       passReqToCallback: true,
     },
     function (request, accessToken, refreshToken, profile, done) {
